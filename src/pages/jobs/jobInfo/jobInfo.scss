@@ -1,0 +1,15 @@
+@media (max-width: 1024px) {
+  
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .job-info-content {
+    min-width: calc(100% - 12px);
+  }
+}
+
+@media (max-width: 739px) {
+  .job-info-content {
+    min-width: calc(100% - 12px);
+  }
+}

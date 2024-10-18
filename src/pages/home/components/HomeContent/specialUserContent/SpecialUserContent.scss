@@ -1,0 +1,37 @@
+#app .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  min-width: 242px !important;
+  align-items: center;
+  border-radius: 8px;
+}
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+.swiper-pagination {
+  position: absolute;
+  bottom: 0px !important;
+  z-index: 50 !important;
+  //   background: #b42318 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #b42318 !important;
+}
+
+// .swiper-pagination-bullet {
+//   background-color: #f8e9ea !important;
+// }

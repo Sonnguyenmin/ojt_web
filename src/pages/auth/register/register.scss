@@ -1,0 +1,37 @@
+
+.register-wrapper {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.register-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 518px ;
+  max-width: calc(100% - 24px);
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .register-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 739px) {
+  .register-wrapper {
+    width: 100%;
+  }
+ 
+}

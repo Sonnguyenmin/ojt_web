@@ -1,0 +1,27 @@
+stages:
+  - deploy
+deploy-job:
+  stage: deploy
+  tags:
+    - Linux-Ubuntu_22.04-Runner
+  image: ubuntu:latest
+  script:
+    - echo "Deploying to $HOST with password $PASS"
+    - |
+      sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 22 root@"$HOST" <<'ENDSSH'
+        echo "Connected to remote server"
+        cd /var/www/client_dev/
+        git stash --include-untracked
+        git pull 
+        . $HOME/.nvm/nvm.sh 
+        nvm use || true
+        npm i
+        npm run build
+        echo "Deploy test success"
+        swapoff -a
+        swapon -a
+        echo "reset swap area done"
+        curl -X POST https://pichudiscordbot.mieusoft.com/admin/send-dev-log  -H "Content-Type: application/json"  -d '{"text": "Rikkei Jobs - Client Dev - Deploy Auto Success: https://clientdev.mieusoft.com"}'
+      ENDSSH
+  only:
+    - dev

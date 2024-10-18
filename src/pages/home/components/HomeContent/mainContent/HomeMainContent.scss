@@ -1,0 +1,25 @@
+.ant-pagination-prev {
+  position: relative;
+  left: 240px; /* Your desired left position */
+  background-color: #f4f4f4;
+  border-radius: 100% !important;
+}
+.ant-pagination-next {
+  position: relative;
+  left: 40px; /* Your desired left position */
+  background-color: #f4f4f4;
+  border-radius: 100% !important;
+}
+
+:where(.css-dev-only-do-not-override-11lehqq).ant-pagination
+  .ant-pagination-item-active {
+  font-weight: 600;
+  background-color: #f8e9ea !important;
+  border: none !important;
+  border-radius: 100% !important;
+}
+:where(.css-dev-only-do-not-override-11lehqq).ant-pagination
+  .ant-pagination-item-active
+  a {
+  color: #ab1f24 !important;
+}

@@ -1,0 +1,55 @@
+.info_changPass {
+  padding: 36px 16px;
+}
+.change_info-text h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.change_info-text span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #676767;
+}
+.change_input {
+  margin-top: 40px;
+}
+.change_input-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.change_input-item {
+  display: flex;
+  width: 894px;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 101px;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 20px;
+  color: #3d3d3d;
+}
+.change_input-item input {
+  width: 690px;
+  height: 44px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px 14px;
+}
+.change_input-item label {
+  width: 30%;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.change_btn {
+  margin-top: 36px;
+  display: flex;
+  justify-content: end;
+  margin-right: 60px;
+  gap: 10px;
+}

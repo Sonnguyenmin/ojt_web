@@ -1,0 +1,119 @@
+.container_info {
+  padding: 36px 16px;
+}
+.form_info {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  gap: 80px;
+}
+.container_info-img {
+  width: 30%;
+
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  gap: 24px;
+}
+.container_info-img h3,
+.container_info-text h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+.form_info-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 216px;
+  cursor: pointer;
+}
+.container_info-text {
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  gap: 18px;
+}
+.container_info-img span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #676767;
+}
+.info_input {
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  gap: 24px;
+}
+.container_info-text span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #676767;
+}
+.info_input-items {
+  color: #676767;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  gap: 24px;
+}
+.info_input-item {
+  width: 282px;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  gap: 8px;
+}
+.info_input-item input,
+.info_select {
+  width: 282px;
+  height: 44px;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+.info_select {
+  border: 0.5px solid #676767;
+}
+.info_btn {
+  display: flex;
+  justify-content: end;
+  width: 384px;
+  height: 48px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+.btn_cancel {
+  width: 161px;
+  height: 48px;
+  background: #f4f4f4;
+  padding: 12px 20px;
+  border: 1px solid #f4f4f4;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d3d3d;
+}
+.btn_update {
+  width: 161px;
+  height: 48px;
+  border: 1px solid #ab1f24;
+  padding: 12px 20px;
+  background: #ab1f24;
+  box-shadow: 0px 1px 2px 0px #1018280d;
+
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
